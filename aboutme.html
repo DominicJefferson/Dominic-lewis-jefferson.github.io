@@ -1,0 +1,113 @@
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dominic Jefferson</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="aboutme.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
+  <!-- <script type="text/javascript">
+var now = new Date();
+var hours = now.getHours();
+var minutes =now.getMinutes();
+
+
+document.write('It\'s now: ', hours, minutes, '<br><br>');
+document.bgColor="#f7f5f0";
+
+
+if (hours > 17 && hours < 20){
+ document.write ('<body style="background-color: orange">');
+}
+
+else if (hours > 19 && hours < 22){
+ document.write ('<body style="background-color: orangered">');
+}
+
+else if (hours > 21 || hours < 5){
+ document.write ('<body style="background-color: #C0C0C0;">');
+}
+
+else if (hours > 8 && hours < 18){
+ document.write ('<body style="background-color: #616D7E">');
+}
+
+else if (hours > 6 && hours < 9){
+ document.write ('<body style="background-color: skyblue">');
+}
+
+else if (hours > 4 && hours < 7){
+ document.write ('<body style="background-color: steelblue">');
+}
+else {
+ document.write ('<body style="background-color: white">');
+}
+</script> -->
+<script>
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+
+if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+
+function mischandler(){
+return false;
+}
+
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+
+</script>
+  <body>
+
+    <div class="main-nav">
+        <ul class="nav">
+          <li class="name">Dominic Jefferson</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutme.html">About me </a></li>
+          <li><a href="https://drive.google.com/file/d/1t99d3JKhmSVtgRn7luAmpfk42_qM4Md2/view?usp=sharing" target="_blank">C.V</a></li>
+        </ul>
+    </div>
+
+
+
+    <main class="flex">
+      <div class="card">
+        <h2 class="cardtitle">Development experience</h2>
+        <p>Experience in using html, CSS, Python and the django framework to design and create websites.<p>
+          <p>n 2013 I made it to the semi-finals of EPIC games “Make something unreal live” competition based on Mendelian genetic inheritance Which involved coming up with a new IP and coding and designing a game.</p>
+          <p>Using python with the open gl frame work to gain a better understanding of maths and objects </p>
+            <p> I've recently invested in a rasberry pi and aim to get a camera for image processing so I can start a deep learning project computer vision involving detecting plant health and and correcting posture and form  .</p>
+      </div>
+
+
+      <div class="card">
+        <h2 class="cardtitle">Hobbies</h2>
+        <p>I have a few hobbies and interests that i enjoy when i find the time:</p>
+        <ul class ="list-section">
+            <li>I have many hobbies and interests that i try to indulge such as:</li>
+          <p><li>Drawing, I'm an amatuer artist who practices for fun. </li></p>
+          <p><li>Cooking, I like to think I'm a good cook.  </li></p>
+          <p><li>Being outdoors, I like to hike, fish and camp.</li></p>
+            <p>   <li>I enjoy coding and learning to make things from scratch.  </li></p>
+
+        </ul>
+
+
+      </div>
+
+    </main>
+    <footer>
+      <ul>
+        <!-- <li><a href="#" class="social twitter">Twitter</a></li>
+        <li><a href="#" class="social linkedin">LinkedIn</a></li> -->
+        <li><a href="https://github.com/Dominic-lewis-jefferson" target="#blank"class="social github">Github</a></li>
+      </ul>
+      <p class="copyright">Copyright 2019, Dominic Jefferson</p>
+    </footer>
+  </body>
+  </html>
